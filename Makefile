@@ -1,12 +1,12 @@
 
 build: 
 	GO111MODULE=on GOOS=linux CGO_ENABLED=0 go build -v && \
-	docker build -t patnaikshekhar/leader-election-test:1 ./example && \
-	docker build -t patnaikshekhar/leader-election-sidecar:1 .
+	docker build -t patnaikshekhar/leader-election-test:1.1 ./example && \
+	docker build -t patnaikshekhar/leader-election-sidecar:1.1 .
 
 push:
-	docker push patnaikshekhar/leader-election-test:1 && \
-	docker push patnaikshekhar/leader-election-sidecar:1
+	docker push patnaikshekhar/leader-election-test:1.1 && \
+	docker push patnaikshekhar/leader-election-sidecar:1.1
 
 debug: build clean runp1 runp2
 

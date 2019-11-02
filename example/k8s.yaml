@@ -49,9 +49,9 @@ spec:
     spec:
       containers:
       - name: leader-election-test
-        image: patnaikshekhar/leader-election-test:1
+        image: patnaikshekhar/leader-election-test:1.1
       - name: leader-election-server
-        image: patnaikshekhar/leader-election-sidecar:1
+        image: patnaikshekhar/leader-election-sidecar:1.1
         env:
         - name: POD_NAME
           valueFrom:

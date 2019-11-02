@@ -2,4 +2,4 @@ FROM alpine
 
 COPY kube-leader-election-sidecar .
 
-CMD ["./kube-leader-election-sidecar", "--kubeconfig", "/config"]
+CMD ["./kube-leader-election-sidecar"]
